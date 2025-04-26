@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css"/>
+    <title>Safe Haven | A Trilha do Caçador</title>
+    <link rel="shortcut icon" type="image/jpg" href="images/favicon/favicon.ico"/>
+  </head>
+
+  <body>
+  <header>
+    <a href="index.html"><img src="images/logosafehaven.png" style="width: 110px; height: auto;"/> </br>
+    <hr style="width:80%" color="white">
+    <nav>
+      <a href="index.html">Campanhas</a>
+      <a href="#sobre">Sobre</a>
+    </nav>
+  </header> </br>
+
+<div class="mesa">
+    <img src="images/logo trilea.png" style="height: 110px; width: auto;"/></br>
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 4</div>
+      <iframe width="900" height="506,25" src="https://www.youtube.com/embed/blrpXf43lBM?si=73-xZmCCHBHw-Wag" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 4</div>
+      <iframe width="900" height="506,25" src="https://www.youtube.com/embed/SU67Jw7U-nc?si=M8k-Zb1p9tJYn3Vi" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 4</div>
+      <iframe width="900" height="506,25" src="https://www.youtube.com/embed/tD-iQUQCBvk?si=R-gXWJC4PokL0ToY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    </div>
+  
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div>
+        <iframe width="900" height="506,25" src="https://www.youtube.com/embed/f646RgoYFR4?si=m97vAjeoYeiA0kZA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+      </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+    <p>Após relatos perturbadores envolvendo o sobrenatural, Klaus e Kane, membros da enigmática "Trilha do Caçador" , são enviados à isolada cidade de Mar'gem, no condado de Nova Carolina</p>
+</header>
+</div>
+
+<section id="sobre">
+  <h2>Sobre Nós</h2>
+
+  <div class="rodape">
+  <div class="sobre-nos">
+    <img src="images/logosafehaven4.png" class="logo-about">
+    <p>O grupo Safe Haven (SF) foi idealizado e fundado em 2018 por Jonas Oliveira e Matheus Cabral. </br>
+      Movidos pela paixão de contar histórias de forma audiovisual, uniram forças com o diretor de arte Lucas Pereira – publicamente conhecido como Lusca Sharktopus – e diversos colaboradores para transformar sonhos em experiências vívidas. </br>
+    </br>
+      Para todos os envolvidos, o RPG sempre foi muito mais do que apenas um jogo — é uma forma de viver histórias, criar laços e dar vida a mundos que só existem porque acreditamos neles.</br>
+    </br>
+      Essa é a essência que move a Safe Haven: contar histórias que ecoam além da imaginação.</br>
+    </br>
+      Seja bem-vindo ao nosso refúgio.</p>
+  </div>
+
+  <div class="contato">
+      <a href="https://www.youtube.com/@safehavenoficial" target="_blank"><img src="images/youtube.png" class="redes"></a>
+      <a href="https://www.instagram.com/safehavenofc/" target="_blank"><img src="images/Instagram.png" class="redes"></a>
+      <a href="https://www.tiktok.com/@safehavenofc?_t=ZM-8vrQCHBh2zn&_r=1" target="_blank"><img  src="images/Tiktok.png" class="redes"></a>
+      </div>
+
+  </div>
+</section>
+</body>
