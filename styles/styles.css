@@ -108,7 +108,6 @@ nav a:hover {
 /* Hide the images by default */
 .mySlides {
     display: none;
-    border: #f2f2f2;
 }
 
 /* Next & previous buttons */
