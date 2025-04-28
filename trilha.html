@@ -53,31 +53,49 @@
   <script>
     let slideIndex = 1;
     showSlides(slideIndex);
-    
+  
     function plusSlides(n) {
       showSlides(slideIndex += n);
     }
-    
+  
     function currentSlide(n) {
       showSlides(slideIndex = n);
     }
-    
+  
     function showSlides(n) {
       let i;
       let slides = document.getElementsByClassName("mySlides");
       let dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {slideIndex = 1}    
-      if (n < 1) {slideIndex = slides.length}
+      let prev = document.querySelector('.prev');
+      let next = document.querySelector('.next');
+  
+      if (n > slides.length) {slideIndex = slides.length}
+      if (n < 1) {slideIndex = 1}
+  
       for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";  
       }
       for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
       }
+  
       slides[slideIndex-1].style.display = "block";  
       dots[slideIndex-1].className += " active";
+  
+      // Esconder ou mostrar botões dependendo do slide atual
+      if (slideIndex === 1) {
+        prev.style.display = "none";
+      } else {
+        prev.style.display = "block";
+      }
+  
+      if (slideIndex === slides.length) {
+        next.style.display = "none";
+      } else {
+        next.style.display = "block";
+      }
     }
-    </script>
+  </script>
     <p>Após relatos perturbadores envolvendo o sobrenatural, Klaus e Kane, membros da enigmática "Trilha do Caçador" , são enviados à isolada cidade de Mar'gem, no condado de Nova Carolina</p>
 </header>
 </div>
@@ -95,7 +113,7 @@
     </br>
       Essa é a essência que move a Safe Haven: contar histórias que ecoam além da imaginação.</br>
     </br>
-      Seja bem-vindo ao nosso refúgio.</p>
+      Seja bem-vindo ao nosso refúgio. | <i>© 2025 - Todos os direitos reservados.</i></p>
   </div>
 
   <div class="contato">
