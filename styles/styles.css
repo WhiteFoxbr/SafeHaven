@@ -171,6 +171,14 @@ nav a:hover {
 }
 
 @media screen and (max-width: 1000px) {
+
+    .rodape {
+        background-color: rgba(27, 27, 27, 0.479);
+        display: flex;
+        padding-bottom: 20px;
+        height: 400px;
+    }
+
     .slideshow-container {
       max-width: 90%;
     }
