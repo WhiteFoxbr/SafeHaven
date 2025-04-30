@@ -225,7 +225,8 @@ nav a:hover {
   }
 
   .redes {
-    padding: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
     height: 120px;
     width: auto;
   }
@@ -243,5 +244,11 @@ nav a:hover {
   .numbertext {
     font-size: 10px;
   }
-  
+
+  .video {
+    width: 35%;
+    height: auto;
+    border: none;
+    border-radius: 12px;
+  }
 }
