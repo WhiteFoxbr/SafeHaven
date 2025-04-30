@@ -103,7 +103,8 @@ nav a:hover {
   max-width: 1000px;
   margin: auto;
   position: relative;
-  aspect-ratio: 16 / 9;
+  width: 900px;
+  height: 506.25px;
 }
 
 .mySlides {
@@ -220,7 +221,7 @@ nav a:hover {
 
   .sobre-nos, .contato {
     width: 100%;
-    padding: 20px;
+    padding: 22px;
     height: auto;
   }
 
