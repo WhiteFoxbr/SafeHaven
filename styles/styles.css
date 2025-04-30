@@ -169,7 +169,6 @@ nav a:hover {
   height: 506.25px;
   border: none;
   border-radius: 12px;
-  aspect-ratio: 16 / 9
 }
   
 @media screen and (max-width: 600px) {
@@ -184,7 +183,6 @@ nav a:hover {
   }
 
   nav a {
-    display: block;
     margin: 10px 0;
     text-align: center;
   }
@@ -245,4 +243,5 @@ nav a:hover {
   .numbertext {
     font-size: 10px;
   }
+  
 }
