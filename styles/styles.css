@@ -215,7 +215,7 @@ nav a:hover {
     height: auto;
     padding: 10px;
     align-items: center;
-    text-align: center;
+    text-align: left;
   }
 
   .sobre-nos, .contato {
@@ -225,8 +225,6 @@ nav a:hover {
   }
 
   .redes {
-    padding-left: 5px;
-    padding-right: 5px;
     height: 120px;
     width: auto;
   }
