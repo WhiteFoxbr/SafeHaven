@@ -103,18 +103,17 @@ nav a:hover {
   max-width: 1000px;
   margin: auto;
   position: relative;
-  width: 900px;
-  height: 506.25px;
 }
 
 .mySlides {
     display: none;
+    width: 100%;
+    height: auto;
 }
 
 .prev, .next {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
   padding: 12px;
   font-size: 20px;
   background-color: rgba(0, 0, 0, 0.5);
@@ -170,6 +169,25 @@ nav a:hover {
   border: none;
   border-radius: 12px;
 }
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 12px;
+}
   
 @media screen and (max-width: 600px) {
   body {
@@ -179,7 +197,7 @@ nav a:hover {
 
   header {
     font-size: 15px;
-    padding: 15px;
+    padding: 20px;
   }
 
   nav a {
@@ -225,13 +243,14 @@ nav a:hover {
   }
 
   .redes {
-    height: 60px;
-    width: auto;
+    width: 60px;
+    height: auto;
   }
 
   .prev, .next {
     font-size: 16px;
     padding: 8px;
+    position: absolute;
   }
 
   .mesa {
@@ -241,10 +260,5 @@ nav a:hover {
 
   .numbertext {
     font-size: 10px;
-  }
-
-  .video {
-    width: 315px;
-    height: 177.18px;
   }
 }
