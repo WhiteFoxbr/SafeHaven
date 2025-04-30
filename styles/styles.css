@@ -227,6 +227,7 @@ nav a:hover {
   .redes {
     height: 120px;
     width: auto;
+    padding: 1px
   }
 
   .prev, .next {
@@ -244,8 +245,8 @@ nav a:hover {
   }
 
   .video {
-    width: 35%;
-    height: auto;
+    width: 315px;
+    height: 177.18px;
     border: none;
     border-radius: 12px;
   }
