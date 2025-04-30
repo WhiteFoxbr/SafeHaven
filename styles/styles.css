@@ -236,10 +236,16 @@ nav a:hover {
     text-align: left;
   }
 
-  .sobre-nos, .contato {
+  .sobre-nos {
     width: 100%;
     padding: 22px;
     height: auto;
+  }
+
+  .contato {
+    width: 100%;
+    padding: 22px;
+    height: 50%;
   }
 
   .redes {
