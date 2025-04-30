@@ -177,8 +177,8 @@ nav a:hover {
   }
 
   header {
-    font-size: 22px;
-    padding: 20px;
+    font-size: 15px;
+    padding: 15px;
   }
 
   nav a {
@@ -213,6 +213,7 @@ nav a:hover {
   .rodape {
     flex-direction: column;
     height: auto;
+    padding: 10px;
     align-items: center;
     text-align: center;
   }
@@ -225,7 +226,8 @@ nav a:hover {
 
   .redes {
     padding: 20px 0;
-    height: auto;
+    height: 10px;
+    width: auto;
   }
 
   .prev, .next {
