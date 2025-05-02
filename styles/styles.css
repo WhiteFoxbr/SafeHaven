@@ -206,7 +206,7 @@ nav a:hover {
   }
 
   header {
-    font-size: 10px;
+    font-size: 20px;
     padding: 20px;
   }
 
@@ -250,6 +250,7 @@ nav a:hover {
     width: 100%;
     padding: 22px;
     height: auto;
+    font-size: 15px;
   }
 
   .contato {
@@ -271,7 +272,7 @@ nav a:hover {
   }
 
   .mesa {
-    font-size: 10px;
+    font-size: 15px;
     padding: 20px;
   }
 
